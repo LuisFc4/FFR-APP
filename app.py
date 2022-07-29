@@ -12,15 +12,15 @@ import os
 
 
 st.title("FFR Chart Template")
-df = pd.read_csv('/mnt/cephfs/hadoop-compute/phoenix/jose.luis.gonzalez/FFR/datas.csv')
+df = pd.read_csv('datas.csv')
 df = df.replace(to_replace=r'\N', value='0')
 df=df.replace('00:00:00.000','',regex=True)
 df2=df
-dfc = pd.read_csv('/mnt/cephfs/hadoop-compute/phoenix/jose.luis.gonzalez/FFR/datasc.csv')
+dfc = pd.read_csv('datasc.csv')
 dfc = dfc.replace(to_replace=r'\N', value='0')
 dfc=dfc.replace('00:00:00.000','',regex=True)
 dfc2=dfc
-dfr = pd.read_csv('/mnt/cephfs/hadoop-compute/phoenix/jose.luis.gonzalez/FFR/datasr.csv')
+dfr = pd.read_csv('datasr.csv')
 dfr = dfr.replace(to_replace=r'\N', value='0')
 dfr=dfr.replace('00:00:00.000','',regex=True)
 dfr2=dfr
