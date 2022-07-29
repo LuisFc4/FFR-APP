@@ -7,7 +7,8 @@ import io
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-
+import os
+os.system("python -m pip install -r requirements.txt")
 from urllib.error import URLError
 
 
