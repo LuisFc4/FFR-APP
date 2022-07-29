@@ -10,7 +10,13 @@ import seaborn as sns
 import os
 os.system("python -m pip install -r requirements.txt")
 from urllib.error import URLError
+st.session_state['answer'] = ''!
+realans = ['', 'abc', 'edf']
 
+if  st.session_state['answer'] in realans:
+    answerStat = "correct"
+elif st.session_state['answer'] not in realans:
+    answerStat = "incorrect"
 
 try:
     st.title("FFR Chart Template")
